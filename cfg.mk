@@ -29,3 +29,9 @@ old_NEWS_hash := 581402d29da29110c15fddec73e357cf
 update-copyright-env = \
   UPDATE_COPYRIGHT_FORCE=1 \
   UPDATE_COPYRIGHT_USE_INTERVALS=2
+
+# Some words/syntax that 'codespell' doesn't understand.
+codespell_ignore_words_list = debbugs,UE
+
+# We don't run 'codespell' on these files.
+exclude_file_name_regexp--sc_codespell =  ^(THANKS|contrib/.*\.txt)$$
