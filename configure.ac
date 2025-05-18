@@ -58,7 +58,7 @@ dnl Ensure VLAs are not used.
 AC_DEFINE([GNULIB_NO_VLA], [1], [Define to 1 to disable use of VLAs])
 
 dnl i18n support from GNU gettext.
-AM_GNU_GETTEXT_VERSION([0.18.1])
+AM_GNU_GETTEXT_VERSION([0.19.2])
 AM_GNU_GETTEXT([external])
 
 AC_CONFIG_FILES([Makefile
