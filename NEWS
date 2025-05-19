@@ -2,6 +2,12 @@ GNU Hello NEWS                                         -*- outline -*-
 
 * Noteworthy changes in release ?.? (????-??-??) [?]
 
+Update gnulib, and support latest versions of automake and autoconf.
+
+Remove outdated and irrelevant material from the contrib directory, which is
+now itself removed.
+
+Thanks in particular to Collin Funk for most of the build system updates.
 
 * Noteworthy changes in release 2.12.1 (2022-05-30) [stable]
 
