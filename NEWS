@@ -1,6 +1,6 @@
 GNU Hello NEWS                                         -*- outline -*-
 
-* Noteworthy changes in release ?.? (????-??-??) [?]
+* Noteworthy changes in release 2.12.2 (2025-05-19) [stable]
 
 Update gnulib, and support latest versions of automake and autoconf.
 
