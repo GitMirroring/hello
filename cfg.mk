@@ -34,4 +34,4 @@ update-copyright-env = \
 codespell_ignore_words_list = debbugs,UE
 
 # We don't run 'codespell' on these files.
-exclude_file_name_regexp--sc_codespell =  ^(THANKS|contrib/.*\.txt)$$
+exclude_file_name_regexp--sc_codespell =  ^THANKS$$

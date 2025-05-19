@@ -27,9 +27,7 @@ EXTRA_DIST = \
 	README-dev \
 	ChangeLog.O \
 	m4/gnulib-cache.m4 \
-	man/hello.x \
-	contrib/de_franconian_po.txt \
-	contrib/evolution.txt
+	man/hello.x
 
 # Subdirectories to descend into.
 SUBDIRS = po
