@@ -56,8 +56,8 @@ EXTRA_DIST += $(man_MANS)
 endif
 
 if BUILD_FROM_GIT
-hello.1: hello
-	$(HELP2MAN) --include=$(top_srcdir)/man/hello.x $(top_builddir)/hello -o $@-t
+hello.1: hello$(EXEEXT)
+	$(HELP2MAN) --include=$(top_srcdir)/man/hello.x $(top_builddir)/hello$(EXEEXT) -o $@-t
 	chmod a=r $@-t
 	mv -f $@-t $@
 

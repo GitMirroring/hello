@@ -3,7 +3,7 @@
 *.[oa]
 *.cache
 .dirstamp
-
+*.exe
 /.sc-start-sc*
 /aclocal.m4
 /ChangeLog
