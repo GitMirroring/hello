@@ -1,6 +1,6 @@
 # Configuration for maintainer-makefile
 #
-# Copyright (c) 2012-2025 Free Software Foundation, Inc.
+# Copyright (c) 2012-2026 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ local-checks-to-skip = \
   sc_indent
 
 # Set format of NEWS
-old_NEWS_hash := 28d8a815b6ee60b5d8daf5283c6902c6
+old_NEWS_hash := 5940357565cd8d809d708da94f93f47f
 
 update-copyright-env = \
   UPDATE_COPYRIGHT_FORCE=1 \
