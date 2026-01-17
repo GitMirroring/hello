@@ -71,4 +71,7 @@ D.M. Ritchie.  The GNU implementation is substantially more complex, in
 order to be a canonical example of a GNU package.  Many people have
 contributed; please see the AUTHORS and ChangeLog files.
 
+For any copyright year range specified as YYYY-ZZZZ in this package
+note that the range specifies every single year in that closed interval.
+
 GNU Hello is free software.  See the file COPYING for copying conditions.
