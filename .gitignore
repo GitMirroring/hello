@@ -14,9 +14,12 @@
 /configure
 /doc/*.aux
 /doc/*.dvi
+/doc/*.html
 /doc/*.info*
 /doc/*.log
 /doc/*.pdf
+/doc/*.t2d
+/doc/*.t2p
 /doc/*.toc
 /doc/hello.??
 /doc/hello.??s
