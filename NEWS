@@ -5,6 +5,8 @@ GNU Hello NEWS                                         -*- outline -*-
 The manual no longer mentions the -h and -v short options which were
 removed in release 2.11.
 
+Update gnulib for compatibility with glibc-2.43.
+
 * Noteworthy changes in release 2.12.2 (2025-05-19) [stable]
 
 Update gnulib, and support latest versions of automake and autoconf.
