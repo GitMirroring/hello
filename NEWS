@@ -1,6 +1,6 @@
 GNU Hello NEWS                                         -*- outline -*-
 
-* Noteworthy changes in release ?.? (????-??-??) [?]
+* Noteworthy changes in release 2.12.3 (2026-03-17) [stable]
 
 The manual no longer mentions the -h and -v short options which were
 removed in release 2.11.
