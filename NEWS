@@ -7,6 +7,10 @@ removed in release 2.11.
 
 Update gnulib for compatibility with glibc-2.43.
 
+GNU hello no longer fails to build with BSD implementations of the
+'make' command.  Previously they would be unable to find a target
+required listed as a dependency of the 'hello' program.
+
 * Noteworthy changes in release 2.12.2 (2025-05-19) [stable]
 
 Update gnulib, and support latest versions of automake and autoconf.

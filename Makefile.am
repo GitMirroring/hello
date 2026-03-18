@@ -35,7 +35,7 @@ SUBDIRS = po
 bin_PROGRAMS = hello
 hello_SOURCES = src/hello.c src/system.h
 
-hello_LDADD = $(top_builddir)/lib/lib$(PACKAGE).a \
+hello_LDADD = lib/lib$(PACKAGE).a \
 	$(HARD_LOCALE_LIB) \
 	$(LIBC32CONV) \
 	$(LIBICONV) \
