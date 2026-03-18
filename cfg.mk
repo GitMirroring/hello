@@ -28,7 +28,7 @@ local-checks-to-skip = \
   sc_indent
 
 # Set format of NEWS
-old_NEWS_hash := 3509edb5b8d1de2821dcdd54264a8795
+old_NEWS_hash := b6e2880ab51e94270167a5cdaf96441a
 
 update-copyright-env = \
   UPDATE_COPYRIGHT_FORCE=1 \
