@@ -22,6 +22,9 @@ ACLOCAL_AMFLAGS = -I m4
 
 AM_CPPFLAGS = -Ilib -I$(top_srcdir)/lib -Isrc -I$(top_srcdir)/src
 
+# Tell the linker to omit references to unused shared libraries.
+AM_LDFLAGS = $(IGNORE_UNUSED_LIBRARIES_CFLAGS)
+
 # Additional files to distribute.
 EXTRA_DIST = \
 	README-dev \
