@@ -19,6 +19,10 @@ GNULIB_SRCDIR ?= $(srcdir)/gnulib
 gnulib_dir = $(GNULIB_SRCDIR)
 manual_title = GNU Hello
 
+# This causes tests/init.sh to emit the commands being executed in logs,
+# which is useful for investigating failures.
+export VERBOSE = yes
+
 # Write cksum supported checksums into the announcement.
 # I.e., base64 to reduce space, and possibly tagged to ease usage.
 announce_gen_args = --cksum-checksums

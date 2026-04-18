@@ -33,6 +33,7 @@
 /lib
 /m4
 /maint.mk
+/tests/init.sh
 /tight-scope.mk
 /Makefile
 /Makefile.in

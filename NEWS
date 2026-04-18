@@ -2,6 +2,8 @@ GNU Hello NEWS                                         -*- outline -*-
 
 * Noteworthy changes in release ?.? (????-??-??) [?]
 
+The test suite now uses the init.sh test framework from Gnulib, which is
+used by many other GNU packages.
 
 * Noteworthy changes in release 2.12.3 (2026-03-17) [stable]
 

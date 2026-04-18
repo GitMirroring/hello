@@ -30,7 +30,8 @@ EXTRA_DIST = \
 	README-dev \
 	ChangeLog.O \
 	m4/gnulib-cache.m4 \
-	man/hello.x
+	man/hello.x \
+	tests/init.sh
 
 # Subdirectories to descend into.
 SUBDIRS = po
