@@ -156,7 +156,7 @@ main (int argc, char *argv[])
   parse_options (argc, argv, &greeting_msg);
 
   len = strlen (greeting_msg) + 1;
-  mb_greeting = xmalloc (len * sizeof (wchar_t));
+  mb_greeting = xnmalloc (len, sizeof *mb_greeting);
   len = mbsrtowcs (mb_greeting, &greeting_msg, len, &mbstate);
   if (len == (size_t) -1)
     error (EXIT_FAILURE, errno, _("conversion to a multibyte string failed"));
