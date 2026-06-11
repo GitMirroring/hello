@@ -30,6 +30,7 @@
 #include "gettext.h"
 #include "progname.h"
 #include "propername.h"
+#include "quote.h"
 #include "version-etc.h"
 #include "xalloc.h"
 
@@ -119,7 +120,7 @@ parse_options (int argc, char *argv[], const char **greeting_msg)
     {
       /* Print error message and exit.  */
       if (argv[optind])
-        error (0, 0, "%s: %s", _("extra operand"), argv[optind]);
+        error (0, 0, "%s: %s", _("extra operand"), quote (argv[optind]));
       emit_try_help ();
       exit (EXIT_FAILURE);
     }

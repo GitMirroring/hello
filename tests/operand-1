@@ -10,7 +10,7 @@
 . "${srcdir=.}/tests/init.sh"; path_prepend_ .
 
 cat <<EOF >exp || framework_failure_
-hello: extra operand: first
+hello: extra operand: 'first'
 Try 'hello --help' for more information.
 EOF
 returns_ 1 hello first second 2>err

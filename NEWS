@@ -5,6 +5,10 @@ GNU Hello NEWS                                         -*- outline -*-
 The test suite now uses the init.sh test framework from Gnulib, which is
 used by many other GNU packages.
 
+hello now quote user supplied arguments in error strings, which avoids
+confusing error messages in the presence of whitespace, control
+characters, etc.
+
 * Noteworthy changes in release 2.12.3 (2026-03-17) [stable]
 
 The manual no longer mentions the -h and -v short options which were
