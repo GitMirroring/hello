@@ -84,7 +84,6 @@ print_help (FILE *restrict out)
 static void
 parse_options (int argc, char *argv[], const char **greeting_msg)
 {
-  int optc;
   int lose = 0;
   enum { OPT_HELP = CHAR_MAX + 1, OPT_VERSION };
   static const struct option longopts[] = {
@@ -95,8 +94,8 @@ parse_options (int argc, char *argv[], const char **greeting_msg)
     {NULL, 0, NULL, 0}
   };
 
-  while ((optc = getopt_long (argc, argv, "g:t", longopts, NULL)) != -1)
-    switch (optc)
+  for (int c; (c = getopt_long (argc, argv, "g:t", longopts, NULL)) != -1;)
+    switch (c)
       {
         /* --help and --version exit immediately, per GNU coding standards.  */
       case OPT_VERSION:
@@ -129,11 +128,6 @@ parse_options (int argc, char *argv[], const char **greeting_msg)
 int
 main (int argc, char *argv[])
 {
-  const char *greeting_msg;
-  wchar_t *mb_greeting;
-  mbstate_t mbstate; mbszero (&mbstate);
-  size_t len;
-
   set_program_name (argv[0]);
 
   /* Set locale via LC_ALL.  */
@@ -146,7 +140,7 @@ main (int argc, char *argv[])
 #endif
 
   /* Having initialized gettext, get the default message. */
-  greeting_msg = _("Hello, world!");
+  const char *greeting_msg = _("Hello, world!");
 
   /* Even exiting has subtleties.  On exit, if any writes failed, change
      the exit status.  The /dev/full device on GNU/Linux can be used for
@@ -156,8 +150,9 @@ main (int argc, char *argv[])
 
   parse_options (argc, argv, &greeting_msg);
 
-  len = strlen (greeting_msg) + 1;
-  mb_greeting = xnmalloc (len, sizeof *mb_greeting);
+  size_t len = strlen (greeting_msg) + 1;
+  wchar_t *mb_greeting = xnmalloc (len, sizeof *mb_greeting);
+  mbstate_t mbstate; mbszero (&mbstate);
   len = mbsrtowcs (mb_greeting, &greeting_msg, len, &mbstate);
   if (len == (size_t) -1)
     error (EXIT_FAILURE, errno, _("conversion to a multibyte string failed"));
